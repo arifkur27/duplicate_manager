@@ -1,172 +1,259 @@
-import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
+import customtkinter as ctk
+from tkinter import messagebox, filedialog
 from core.file_scan import scan_folder
 from core.file_delete import delete_file
 from ui.preview_window import show_preview_window
 from ui.filter_logic import filter_duplicates
+import time
 
 
-class DuplicateManagerApp:
-    def __init__(self, master):
-        self.master = master
-        master.title("🔍 Duplicate File Manager")
-        master.geometry("820x550")
-        master.config(bg="#f0f4f7")
+class DuplicateManagerApp(ctk.CTk):
 
-        self.folder_path = ""
+    def __init__(self):
+        super().__init__()
+
+        self.title("Duplicate File Manager")
+        self.geometry("1000x600")
+        ctk.set_appearance_mode("light")
+        ctk.set_default_color_theme("green")
+
+        # State
+        self.folder_path = ctk.StringVar()
         self.duplicates = []
         self.filtered_duplicates = []
+        self.start_time = None
+        self.checkbox_vars = []  # untuk checkbox
 
-        # Header
-        tk.Label(master, text="Duplicate File Manager",
-                 font=("Segoe UI", 18, "bold"),
-                 bg="#2D6A4F", fg="white", pady=10).pack(fill=tk.X)
+        self.build_ui()
 
-        # Main Frame
-        main_frame = tk.Frame(master, bg="#f0f4f7", padx=20, pady=15)
-        main_frame.pack(fill=tk.BOTH, expand=True)
+    # ======================================================
+    #                       UI SETUP
+    # ======================================================
+    def build_ui(self):
+        self.build_header()
+        self.build_folder_bar()
+        self.build_filter_section()
+        self.build_list_area()
+        self.build_progress_info()
+        self.build_footer_buttons()
+        self.build_footer()
 
-        tk.Label(main_frame, text="Pilih folder untuk mencari file duplikat:",
-                 font=("Segoe UI", 11), bg="#f0f4f7").pack(anchor="w", pady=(5, 2))
+    def build_header(self):
+        header = ctk.CTkFrame(self, height=50, fg_color="#2D6A4F")
+        header.pack(fill="x")
+        ctk.CTkLabel(
+            header, text="Duplicate File Manager",
+            font=("Segoe UI", 18, "bold"), text_color="white"
+        ).place(relx=0.5, rely=0.5, anchor="center")
 
-        # Tombol Pilih & Cari
-        btn_frame = tk.Frame(main_frame, bg="#f0f4f7")
-        btn_frame.pack(fill=tk.X, pady=(0, 10))
+    def build_folder_bar(self):
+        bar = ctk.CTkFrame(self)
+        bar.pack(fill="x", pady=(5, 5))
 
-        tk.Button(btn_frame, text="📁 Pilih Folder",
-                  bg="#95D5B2", fg="black",
-                  font=("Segoe UI", 10, "bold"),
-                  command=self.select_folder,
-                  relief="flat", width=15).pack(side=tk.LEFT, padx=(0, 10))
+        ctk.CTkButton(
+            bar, text="📁 Pilih Folder", width=130,
+            fg_color="#74C69D", text_color="black",
+            command=self.select_folder
+        ).pack(side="left", padx=5)
 
-        tk.Button(btn_frame, text="🔎 Cari Duplikat",
-                  bg="#52B788", fg="white",
-                  font=("Segoe UI", 10, "bold"),
-                  command=self.find_duplicates,
-                  relief="flat", width=15).pack(side=tk.LEFT)
+        ctk.CTkEntry(
+            bar, textvariable=self.folder_path, width=600
+        ).pack(side="left", padx=5)
 
-        # Filter
-        filter_frame = tk.Frame(main_frame, bg="#f0f4f7")
-        filter_frame.pack(fill=tk.X, pady=(0, 10))
-        tk.Label(filter_frame, text="Filter jenis file:", bg="#f0f4f7",
-                 font=("Segoe UI", 10)).pack(side=tk.LEFT)
-        self.filter_var = tk.StringVar()
-        self.filter_box = ttk.Combobox(filter_frame, textvariable=self.filter_var,
-                                       state="readonly",
-                                       values=["Semua", "Foto", "Dokumen", "Lainnya"])
-        self.filter_box.current(0)
-        self.filter_box.pack(side=tk.LEFT, padx=10)
-        tk.Button(filter_frame, text="Terapkan Filter",
-                  command=self.apply_filter,
-                  bg="#74C69D", font=("Segoe UI", 9, "bold"),
-                  relief="flat").pack(side=tk.LEFT)
+        ctk.CTkButton(
+            bar, text="🔎 Cari Duplikat", width=130,
+            fg_color="#40916C", text_color="white",
+            command=self.find_duplicates
+        ).pack(side="left", padx=5)
 
-        # Listbox
-        list_frame = tk.Frame(main_frame, bg="#f0f4f7")
-        list_frame.pack(fill=tk.BOTH, expand=True, pady=10)
+        ctk.CTkButton(
+            bar, text="🔄 Refresh", width=100,
+            fg_color="#1D9BF0", text_color="white",
+            command=self.refresh_view
+        ).pack(side="left", padx=5)
 
-        self.scrollbar = tk.Scrollbar(list_frame)
-        self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+    def build_filter_section(self):
+        section = ctk.CTkFrame(self)
+        section.pack(fill="x", pady=(0, 5))
 
-        self.listbox = tk.Listbox(list_frame, width=100, height=15,
-                                  yscrollcommand=self.scrollbar.set,
-                                  font=("Consolas", 10), bg="#ffffff",
-                                  fg="#333333", selectbackground="#74C69D",
-                                  relief="flat")
-        self.listbox.pack(fill=tk.BOTH, expand=True)
-        self.scrollbar.config(command=self.listbox.yview)
+        ctk.CTkLabel(section, text="Filter jenis file:").pack(side="left", padx=5)
 
-        # Tombol aksi
-        button_frame = tk.Frame(main_frame, bg="#f0f4f7")
-        button_frame.pack(pady=10)
+        self.filter_var = ctk.StringVar(value="Semua")
+        self.filter_box = ctk.CTkComboBox(
+            section, variable=self.filter_var, width=180,
+            values=["Semua", "Foto", "Dokumen", "Lainnya"]
+        )
+        self.filter_box.pack(side="left", padx=5)
 
-        tk.Button(button_frame, text="👁️ Lihat File Terpilih",
-                  bg="#118AB2", fg="white",
-                  font=("Segoe UI", 10, "bold"),
-                  command=self.preview_selected,
-                  relief="flat", width=20).pack(side=tk.LEFT, padx=10)
+        ctk.CTkButton(
+            section, text="Terapkan Filter", width=120,
+            fg_color="#74C69D", text_color="black",
+            command=self.apply_filter
+        ).pack(side="left", padx=5)
 
-        tk.Button(button_frame, text="🗑️ Hapus File Terpilih",
-                  bg="#D00000", fg="white",
-                  font=("Segoe UI", 10, "bold"),
-                  command=self.remove_selected,
-                  relief="flat", width=20).pack(side=tk.LEFT, padx=10)
+    def build_list_area(self):
+        container = ctk.CTkFrame(self)
+        container.pack(fill="both", expand=True, padx=10, pady=(0, 5))
+        self.scroll = ctk.CTkScrollableFrame(container, width=900)
+        self.scroll.pack(fill="both", expand=True)
+        self.checkbox_vars = []
 
-        tk.Button(button_frame, text="⚠️ Hapus Semua Duplikat",
-                  bg="#FFB703", fg="black",
-                  font=("Segoe UI", 10, "bold"),
-                  command=self.remove_all_duplicates,
-                  relief="flat", width=20).pack(side=tk.LEFT, padx=10)
+    def build_progress_info(self):
+        self.progress = ctk.CTkProgressBar(self, width=400)
+        self.progress.pack(pady=(5, 2))
+        self.progress.set(0)
 
-        # Footer
-        tk.Label(master, text="© 2025 Duplicate File Manager by Arif",
-                 bg="#2D6A4F", fg="white",
-                 font=("Segoe UI", 9), pady=5).pack(fill=tk.X, side=tk.BOTTOM)
+        self.info_label = ctk.CTkLabel(self, text="", font=("Segoe UI", 11))
+        self.info_label.pack(pady=(0, 5))
 
-    # --- Fungsi ---
+    def build_footer_buttons(self):
+        bottom = ctk.CTkFrame(self, fg_color="transparent")
+        bottom.pack(pady=10)
+
+        ctk.CTkButton(
+            bottom, text="✅ Pilih Semua", width=150,
+            fg_color="#1B9C85", text_color="white",
+            font=("Segoe UI", 14, "bold"), corner_radius=10,
+            command=self.select_all
+        ).pack(side="left", padx=10)
+
+        ctk.CTkButton(
+            bottom, text="❌ Hapus Centang", width=150,
+            fg_color="#6c757d", text_color="white",
+            font=("Segoe UI", 14, "bold"), corner_radius=10,
+            command=self.clear_all
+        ).pack(side="left", padx=10)
+
+        ctk.CTkButton(
+            bottom, text="🗑️ Hapus File Terpilih", width=200,
+            fg_color="#D00000", text_color="white",
+            font=("Segoe UI", 14, "bold"), corner_radius=10,
+            command=self.remove_selected
+        ).pack(side="left", padx=10)
+
+        ctk.CTkButton(
+            bottom, text="⚠️ Hapus Semua Duplikat", width=200,
+            fg_color="#FFB703", text_color="black",
+            font=("Segoe UI", 14, "bold"), corner_radius=10,
+            command=self.remove_all_duplicates
+        ).pack(side="left", padx=10)
+
+    def build_footer(self):
+        footer = ctk.CTkFrame(self, height=35, fg_color="#2D6A4F")
+        footer.pack(fill="x", side="bottom")
+        ctk.CTkLabel(
+            footer, text="© 2025 Duplicate File Manager by Arif",
+            text_color="white", font=("Segoe UI", 10)
+        ).pack(pady=5)
+
+    # ======================================================
+    #                      FUNGSI
+    # ======================================================
+
     def select_folder(self):
-        from tkinter import filedialog
-        self.folder_path = filedialog.askdirectory()
-        if self.folder_path:
-            messagebox.showinfo("Folder Dipilih", f"Folder: {self.folder_path}")
+        folder = filedialog.askdirectory()
+        if folder:
+            self.folder_path.set(folder)
 
     def find_duplicates(self):
-        if not self.folder_path:
+        if not self.folder_path.get():
             messagebox.showwarning("Peringatan", "Pilih folder terlebih dahulu!")
             return
-        self.listbox.delete(0, tk.END)
-        self.duplicates = scan_folder(self.folder_path)
+
+        self.progress.set(0)
+        self.info_label.configure(text="Mengumpulkan daftar file...")
+        self.update_idletasks()
+
+        self.start_time = time.time()
+        self.duplicates = scan_folder(
+            self.folder_path.get(),
+            progress_callback=self.update_scan_progress,
+            finish_callback=self.scan_finished
+        )
         self.filtered_duplicates = self.duplicates
-        if self.duplicates:
-            for f1, f2 in self.duplicates:
-                self.listbox.insert(tk.END, f"{f1} ⇄ {f2}")
-            messagebox.showinfo("Selesai", f"Ditemukan {len(self.duplicates)} duplikat.")
-        else:
-            messagebox.showinfo("Hasil", "Tidak ada duplikat ditemukan.")
+        self.show_duplicates_in_list(self.filtered_duplicates)
+
+    def show_duplicates_in_list(self, data):
+        for widget in self.scroll.winfo_children():
+            widget.destroy()
+        self.checkbox_vars.clear()
+
+        for f1, f2 in data:
+            row_frame = ctk.CTkFrame(self.scroll)
+            row_frame.pack(fill="x", pady=2, padx=2)
+
+            var = ctk.BooleanVar()
+            cb = ctk.CTkCheckBox(row_frame, text=f"{f1}   ⇄   {f2}", variable=var)
+            cb.pack(side="left", fill="x", expand=True, padx=(5, 0))
+
+            preview_btn = ctk.CTkButton(
+                row_frame, text="👁️", width=40,
+                fg_color="#40916C", text_color="white",
+                command=lambda path=f2: show_preview_window(self, path)
+            )
+            preview_btn.pack(side="right", padx=5)
+
+            self.checkbox_vars.append((var, f2))
+
+    def update_scan_progress(self, path, scanned, total):
+        percent = scanned / total
+        self.progress.set(percent)
+
+        elapsed = time.time() - self.start_time
+        remaining = (elapsed / scanned * total - elapsed) if scanned > 0 else 0
+        mins = int(remaining // 60)
+        secs = int(remaining % 60)
+        estimate_text = f"{mins}m {secs}s lagi" if remaining > 3 else "Sebentar lagi"
+
+        self.info_label.configure(text=f"⏳ {scanned}/{total} file • Estimasi {estimate_text}")
+        self.update_idletasks()
+
+    def scan_finished(self, total_files, dup_count, seconds):
+        self.info_label.configure(
+            text=f"Scan selesai • {total_files} file • {dup_count} duplikat • {seconds} detik"
+        )
+        messagebox.showinfo(
+            "Selesai",
+            f"Scan selesai!\n\nTotal file: {total_files}\nDuplikat ditemukan: {dup_count}\nWaktu: {seconds} detik"
+        )
 
     def apply_filter(self):
         if not self.duplicates:
-            messagebox.showwarning("Tidak ada data", "Lakukan pencarian duplikat terlebih dahulu.")
+            messagebox.showwarning("Tidak ada data", "Scan dahulu sebelum filter.")
             return
+
         tipe = self.filter_var.get()
         self.filtered_duplicates = filter_duplicates(self.duplicates, tipe)
-        self.listbox.delete(0, tk.END)
-        for f1, f2 in self.filtered_duplicates:
-            self.listbox.insert(tk.END, f"{f1} ⇄ {f2}")
+        self.show_duplicates_in_list(self.filtered_duplicates)
+        self.info_label.configure(
+            text=f"Filter: {tipe} • {len(self.filtered_duplicates)} ditemukan"
+        )
 
-    def preview_selected(self):
-        selection = self.listbox.curselection()
-        if not selection:
-            messagebox.showwarning("Peringatan", "Pilih file untuk dilihat.")
-            return
-        selected = self.listbox.get(selection[0])
-        file_to_preview = selected.split("⇄")[-1].strip()
-        show_preview_window(self.master, file_to_preview)
+    def refresh_view(self):
+        self.apply_filter()
+
+    def select_all(self):
+        for var, _ in self.checkbox_vars:
+            var.set(True)
+
+    def clear_all(self):
+        for var, _ in self.checkbox_vars:
+            var.set(False)
 
     def remove_selected(self):
-        selection = self.listbox.curselection()
-        if not selection:
-            messagebox.showwarning("Peringatan", "Pilih file duplikat yang ingin dihapus.")
+        selected = [f for var, f in self.checkbox_vars if var.get()]
+        if not selected:
+            messagebox.showwarning("Tidak ada pilihan", "Centang file yang ingin dihapus.")
             return
-        selected = self.listbox.get(selection[0])
-        file_to_delete = selected.split("⇄")[-1].strip()
-        confirm = messagebox.askyesno("Konfirmasi", f"Hapus file ini dari sistem?\n\n{file_to_delete}")
-        if confirm:
-            delete_file([file_to_delete])
-            self.listbox.delete(selection[0])
-            messagebox.showinfo("Berhasil", f"File dihapus:\n{file_to_delete}")
+        if messagebox.askyesno("Konfirmasi", f"Hapus {len(selected)} file terpilih?"):
+            delete_file(selected)
+            self.find_duplicates()
 
     def remove_all_duplicates(self):
         if not self.duplicates:
-            messagebox.showwarning("Tidak ada duplikat", "Belum ada hasil scan duplikat.")
+            messagebox.showwarning("Tidak ada duplikat", "Belum scan.")
             return
-        confirm = messagebox.askyesno(
-            "Konfirmasi",
-            f"Akan menghapus {len(self.duplicates)} file duplikat dari komputer.\nLanjutkan?")
-        if not confirm:
-            return
-        all_files_to_delete = [f2 for _, f2 in self.duplicates]
-        delete_file(all_files_to_delete)
-        self.listbox.delete(0, tk.END)
-        self.duplicates = []
-        messagebox.showinfo("Selesai", "Semua file duplikat berhasil dihapus permanen!")
+        if messagebox.askyesno("Konfirmasi", f"Hapus semua ({len(self.duplicates)}) duplikat?"):
+            files = [f2 for f1, f2 in self.duplicates]
+            delete_file(files)
+            self.find_duplicates()
