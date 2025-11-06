@@ -1,9 +1,22 @@
-# Duplicate File Manager
+# 🎓 Duplicate File Manager
 
 Aplikasi Python untuk mendeteksi dan menghapus file duplikat dari folder asli.
 
-## Cara Menjalankan
-1. Install dependensi:
-   pip install -r requirements.txt
-2. Jalankan aplikasi:
-   python app.py
+## ⚙️ Instalasi & Persiapan
+
+1. **(Opsional)** Buat virtual environment:
+
+- `python -m venv venv`
+
+2. Aktifkan environment:
+
+- `venv\Scripts\activate` #Windows
+- `source venv/bin/activate` #Mac/Linux
+
+3. Install dependencies (opsional):
+
+- `pip install -r requirements.txt`
+
+4. Jalankan aplikasi
+
+- `python app.py`
