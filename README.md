@@ -13,7 +13,7 @@ Aplikasi Python untuk mendeteksi dan menghapus file duplikat dari folder asli.
 - `venv\Scripts\activate` #Windows
 - `source venv/bin/activate` #Mac/Linux
 
-3. Install dependencies (opsional):
+3. Install dependencies:
 
 - `pip install -r requirements.txt`
 
