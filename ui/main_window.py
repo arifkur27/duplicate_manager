@@ -70,7 +70,7 @@ class DuplicateManagerApp(ctk.CTk):
         ).place(relx=0.5, rely=0.5, anchor="center")
 
         ctk.CTkButton(
-            header, text="ℹ️", width=40, height=32,
+            header, text="⚙️", width=40, height=32,
             corner_radius=8, fg_color=self.primary_color,
             hover_color=self.button_hover, text_color="white",
             command=self.toggle_about_page
@@ -172,7 +172,7 @@ class DuplicateManagerApp(ctk.CTk):
         footer = ctk.CTkFrame(self, height=35, fg_color=self.header_color)
         footer.pack(fill="x", side="bottom")
         ctk.CTkLabel(
-            footer, text="© 2025 Duplicate File Manager by Nasywa",
+            footer, text="© 2025 Duplicate File Manager by kelompok 5",
             text_color="white", font=("Poppins", 10)
         ).pack(pady=5)
 
@@ -314,6 +314,3 @@ class DuplicateManagerApp(ctk.CTk):
             self.show_home_page()
 
 
-if __name__ == "__main__":
-    app = DuplicateManagerApp()
-    app.mainloop()

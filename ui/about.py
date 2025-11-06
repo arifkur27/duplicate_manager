@@ -4,7 +4,7 @@ class AboutFrame(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
         
-        # Warna utama (otomatis adaptif)
+        # Warna utama (tema)
         self.primary_color = "#5A5BF3"
         self.accent_color = "#6C63FF"
         self.text_main = "#1B1B2F"
@@ -20,7 +20,7 @@ class AboutFrame(ctk.CTkFrame):
 
         super().__init__(parent, fg_color=bg_color)
 
-        # Judul Utama
+        # Judul utama
         ctk.CTkLabel(
             self,
             text="Duplicate File Manager",
@@ -36,10 +36,10 @@ class AboutFrame(ctk.CTkFrame):
             text_color=subtext_color
         ).pack(pady=(0, 20))
 
-        # Garis Pemisah
+        # Garis pemisah
         ctk.CTkFrame(self, height=2, fg_color=self.divider_color).pack(fill="x", padx=60, pady=(0, 20))
 
-        # Tombol Navigasi
+        # Tombol navigasi
         nav_frame = ctk.CTkFrame(self, fg_color="transparent")
         nav_frame.pack(pady=(0, 10))
 
@@ -59,8 +59,20 @@ class AboutFrame(ctk.CTkFrame):
         )
         self.btn_usage.grid(row=0, column=1, padx=10)
 
-        # Frame konten utama
-        self.content_frame = ctk.CTkFrame(self, corner_radius=15, fg_color=("white", "#2B2B40"))
+        self.btn_team = ctk.CTkButton(
+            nav_frame, text="Pembuat Aplikasi",
+            corner_radius=8, fg_color=self.primary_color,
+            hover_color=self.accent_color, text_color="white",
+            command=self.show_team
+        )
+        self.btn_team.grid(row=0, column=2, padx=10)
+
+        # ✅ Frame utama konten (scrollable FIX)
+        self.content_frame = ctk.CTkScrollableFrame(
+            self,
+            corner_radius=15,
+            fg_color=("white", "#2B2B40")
+        )
         self.content_frame.pack(padx=30, pady=(10, 25), fill="both", expand=True)
 
         # Default tampilan
@@ -69,13 +81,13 @@ class AboutFrame(ctk.CTkFrame):
         # Footer
         ctk.CTkLabel(
             self,
-            text="Versi 1.0.0 — Dibuat oleh kelompok 5",
+            text="Versi 1.0.0 — Dibuat oleh Kelompok 5",
             font=("Poppins", 12, "italic"),
             text_color=subtext_color
         ).pack(pady=(0, 10))
 
     # ======================================================
-    #                  LOGIKA HALAMAN
+    # LOGIKA HALAMAN
     # ======================================================
     def clear_content(self):
         for widget in self.content_frame.winfo_children():
@@ -83,7 +95,6 @@ class AboutFrame(ctk.CTkFrame):
 
     def show_info(self):
         self.clear_content()
-
         ctk.CTkLabel(
             self.content_frame,
             text="Informasi Aplikasi",
@@ -93,24 +104,15 @@ class AboutFrame(ctk.CTkFrame):
 
         ctk.CTkLabel(
             self.content_frame,
-            text=(
-                "Duplicate File Manager adalah aplikasi berbasis GUI yang membantu Anda "
-                "mendeteksi file duplikat di komputer dengan cepat dan efisien. "
-                "Aplikasi ini dirancang dengan antarmuka modern, mudah digunakan, "
-                "dan mendukung mode aman (*Safe Mode*) agar file tidak langsung terhapus permanen."
-            ),
+            text=("Duplicate File Manager adalah aplikasi berbasis GUI yang membantu Anda "
+                  "mendeteksi file duplikat di komputer dengan cepat dan efisien. "
+                  "Aplikasi ini dirancang dengan antarmuka modern, mudah digunakan, "
+                  "dan mendukung mode aman (*Safe Mode*) agar file tidak langsung terhapus permanen."),
             font=("Inter", 13),
             text_color="#E0E0E0" if ctk.get_appearance_mode() == "Dark" else "#1B1B2F",
             justify="left",
             wraplength=600
         ).pack(padx=25, pady=(0, 15))
-
-        ctk.CTkLabel(
-            self.content_frame,
-            text="Fitur Utama:",
-            font=("Poppins", 14, "bold"),
-            text_color=self.primary_color
-        ).pack(pady=(10, 5))
 
         fitur_text = (
             "• Pencarian file duplikat berdasarkan nama, ukuran, atau hash.\n"
@@ -118,6 +120,13 @@ class AboutFrame(ctk.CTkFrame):
             "• Mode aman (*Safe Mode*) untuk menghindari penghapusan permanen.\n"
             "• Antarmuka ringan, cepat, dan ramah pengguna."
         )
+
+        ctk.CTkLabel(
+            self.content_frame,
+            text="Fitur Utama:",
+            font=("Poppins", 14, "bold"),
+            text_color=self.primary_color
+        ).pack(pady=(10, 5))
 
         ctk.CTkLabel(
             self.content_frame,
@@ -129,7 +138,6 @@ class AboutFrame(ctk.CTkFrame):
 
     def show_usage(self):
         self.clear_content()
-
         ctk.CTkLabel(
             self.content_frame,
             text="Cara Penggunaan",
@@ -149,29 +157,74 @@ class AboutFrame(ctk.CTkFrame):
             "- Pastikan memiliki ruang kosong yang cukup saat melakukan pemindaian folder besar."
         )
 
-        # Textbox posisi lebih ke tengah & tidak terlalu ke bawah
-        textbox_frame = ctk.CTkFrame(self.content_frame, fg_color="transparent")
-        textbox_frame.pack(expand=True)  # membuat area isi di tengah frame
-
         textbox = ctk.CTkTextbox(
-            textbox_frame,
+            self.content_frame,
             width=600,
-            height=180,  # sedikit lebih kecil agar posisi tidak turun ke bawah
+            height=200,
             font=("Inter", 13),
             wrap="word",
             fg_color=("#FFFFFF", "#2B2B40"),
             text_color="#E0E0E0" if ctk.get_appearance_mode() == "Dark" else "#1B1B2F",
             corner_radius=10
         )
-        textbox.pack(padx=25, pady=(5, 5))
-
-        # Tambahkan sedikit jarak atas agar teks tidak terlalu nempel ke atas textbox
+        textbox.pack(padx=25, pady=(10, 15))
         textbox.insert("1.0", "\n" + usage_text)
         textbox.configure(state="disabled")
 
+    # ======================================================
+    # HALAMAN PEMBUAT APLIKASI
+    # ======================================================
+    def show_team(self):
+        self.clear_content()
         ctk.CTkLabel(
             self.content_frame,
-            text="💡 Tips: Gunakan mode gelap untuk kenyamanan mata saat bekerja lama.",
+            text="Pembuat Aplikasi",
+            font=("Poppins", 18, "bold"),
+            text_color=self.primary_color
+        ).pack(pady=(15, 10))
+
+        team_frame = ctk.CTkFrame(self.content_frame, fg_color="transparent")
+        team_frame.pack(padx=20, pady=(5, 15))
+
+        anggota = [
+            ("Arif Kurniawan", "230103126"),
+            ("Nasywa Hamna Zakiya", "230103146"),
+            ("Dista Dian Saputri", "230103131"),
+            ("Muhammad Ridwan Martana Putra", "230103144"),
+            ("Muhammad Fadlan Al Farid", "230103199"),
+        ]
+
+        # tampil 2 kolom (kotak)
+        for i, (nama, nim) in enumerate(anggota):
+            row = i // 2
+            col = i % 2
+
+            card = ctk.CTkFrame(
+                team_frame,
+                corner_radius=12,
+                fg_color=("#FFFFFF", "#2F2F44"),
+                border_color=self.accent_color,
+                border_width=1
+            )
+            card.grid(row=row, column=col, padx=19, pady=10, sticky="nsew")
+
+            ctk.CTkLabel(
+                card,
+                text=nama,
+                font=("Poppins", 14, "bold"),
+                text_color=self.primary_color
+            ).pack(pady=(10, 2))
+
+            ctk.CTkLabel(
+                card,
+                text=f"NIM: {nim}",
+                font=("Inter", 13),
+                text_color="#E0E0E0" if ctk.get_appearance_mode() == "Dark" else "#1B1B2F"
+            ).pack(pady=(0, 10))
+
+        ctk.CTkLabel(
+            self.content_frame,
+            text="Universitas Duta Bangsa Surakarta — 2025",
             font=("Poppins", 12, "italic"),
             text_color=self.accent_color
-        ).pack(pady=(5, 10))
+        ).pack(pady=(10, 10))
