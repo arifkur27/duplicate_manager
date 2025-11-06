@@ -5,18 +5,17 @@ class AboutFrame(ctk.CTkFrame):
         super().__init__(parent)
         
         # Warna utama (otomatis adaptif)
-        self.primary_color = "#5A5BF3"   # biru lembut
-        self.accent_color = "#6C63FF"    # hover biru lembut
-        self.text_main = "#1B1B2F"       # teks utama
-        self.text_secondary = "#444"     # teks sekunder
+        self.primary_color = "#5A5BF3"
+        self.accent_color = "#6C63FF"
+        self.text_main = "#1B1B2F"
+        self.text_secondary = "#444"
         self.bg_light = "#F8F9FA"
         self.bg_dark = "#1E1E2E"
         self.divider_color = "#DADCE0"
 
-        # Tentukan background sesuai tema
+        # Tema adaptif
         current_theme = ctk.get_appearance_mode()
         bg_color = self.bg_dark if current_theme == "Dark" else self.bg_light
-        text_color = "white" if current_theme == "Dark" else self.text_main
         subtext_color = "#DDE1E7" if current_theme == "Dark" else self.text_secondary
 
         super().__init__(parent, fg_color=bg_color)
@@ -40,33 +39,27 @@ class AboutFrame(ctk.CTkFrame):
         # Garis Pemisah
         ctk.CTkFrame(self, height=2, fg_color=self.divider_color).pack(fill="x", padx=60, pady=(0, 20))
 
-        # Tombol Navigasi Mini (Informasi / Cara Pakai)
+        # Tombol Navigasi
         nav_frame = ctk.CTkFrame(self, fg_color="transparent")
         nav_frame.pack(pady=(0, 10))
 
         self.btn_info = ctk.CTkButton(
-            nav_frame,
-            text="Informasi Aplikasi",
-            corner_radius=8,
-            fg_color=self.primary_color,
-            hover_color=self.accent_color,
-            text_color="white",
+            nav_frame, text="Informasi Aplikasi",
+            corner_radius=8, fg_color=self.primary_color,
+            hover_color=self.accent_color, text_color="white",
             command=self.show_info
         )
         self.btn_info.grid(row=0, column=0, padx=10)
 
         self.btn_usage = ctk.CTkButton(
-            nav_frame,
-            text="Cara Penggunaan",
-            corner_radius=8,
-            fg_color=self.primary_color,
-            hover_color=self.accent_color,
-            text_color="white",
+            nav_frame, text="Cara Penggunaan",
+            corner_radius=8, fg_color=self.primary_color,
+            hover_color=self.accent_color, text_color="white",
             command=self.show_usage
         )
         self.btn_usage.grid(row=0, column=1, padx=10)
 
-        # Frame Konten Utama
+        # Frame konten utama
         self.content_frame = ctk.CTkFrame(self, corner_radius=15, fg_color=("white", "#2B2B40"))
         self.content_frame.pack(padx=30, pady=(10, 25), fill="both", expand=True)
 
@@ -76,7 +69,7 @@ class AboutFrame(ctk.CTkFrame):
         # Footer
         ctk.CTkLabel(
             self,
-            text="Versi 1.0.0 — Dibuat oleh Nasywa",
+            text="Versi 1.0.0 — Dibuat oleh kelompok 5",
             font=("Poppins", 12, "italic"),
             text_color=subtext_color
         ).pack(pady=(0, 10))
@@ -142,29 +135,43 @@ class AboutFrame(ctk.CTkFrame):
             text="Cara Penggunaan",
             font=("Poppins", 18, "bold"),
             text_color=self.primary_color
-        ).pack(pady=(15, 10))
+        ).pack(pady=(15, 5))
 
         usage_text = (
             "1. Pilih folder yang ingin dipindai dari komputer Anda.\n"
             "2. Klik tombol **Cari Duplikat** untuk memulai proses pencarian.\n"
             "3. Setelah hasil muncul, centang file yang ingin dihapus.\n"
             "4. Tekan **Hapus File Terpilih** untuk membersihkan penyimpanan.\n"
-            "5. Gunakan **Filter File** untuk menampilkan jenis file tertentu sesuai kebutuhan."
+            "5. Gunakan **Filter File** untuk menampilkan jenis file tertentu sesuai kebutuhan.\n\n"
+            "💡 Tips tambahan:\n"
+            "- Aktifkan *Safe Mode* agar file dipindahkan ke folder aman sebelum dihapus permanen.\n"
+            "- Anda dapat meninjau ulang file di tab *Preview* sebelum dihapus.\n"
+            "- Pastikan memiliki ruang kosong yang cukup saat melakukan pemindaian folder besar."
         )
 
-        ctk.CTkLabel(
-            self.content_frame,
-            text=usage_text,
+        # Textbox posisi lebih ke tengah & tidak terlalu ke bawah
+        textbox_frame = ctk.CTkFrame(self.content_frame, fg_color="transparent")
+        textbox_frame.pack(expand=True)  # membuat area isi di tengah frame
+
+        textbox = ctk.CTkTextbox(
+            textbox_frame,
+            width=600,
+            height=180,  # sedikit lebih kecil agar posisi tidak turun ke bawah
             font=("Inter", 13),
+            wrap="word",
+            fg_color=("#FFFFFF", "#2B2B40"),
             text_color="#E0E0E0" if ctk.get_appearance_mode() == "Dark" else "#1B1B2F",
-            justify="left",
-            wraplength=600
-        ).pack(padx=25, pady=(0, 15))
+            corner_radius=10
+        )
+        textbox.pack(padx=25, pady=(5, 5))
+
+        # Tambahkan sedikit jarak atas agar teks tidak terlalu nempel ke atas textbox
+        textbox.insert("1.0", "\n" + usage_text)
+        textbox.configure(state="disabled")
 
         ctk.CTkLabel(
             self.content_frame,
-            text="💡 Tips: Aktifkan *Safe Mode* agar file dipindahkan ke folder aman sebelum dihapus permanen.",
+            text="💡 Tips: Gunakan mode gelap untuk kenyamanan mata saat bekerja lama.",
             font=("Poppins", 12, "italic"),
             text_color=self.accent_color
-        ).pack(pady=(10, 10))
-
+        ).pack(pady=(5, 10))
