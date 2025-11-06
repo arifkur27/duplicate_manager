@@ -20,3 +20,9 @@ Aplikasi Python untuk mendeteksi dan menghapus file duplikat dari folder asli.
 4. Jalankan aplikasi
 
 - `python app.py`
+  
+5. membuat file menjadi exe
+- `pip install pyinstaller`
+- `pyinstaller --noconsole --onefile app.py` #cek di dist/main.exe
+
+
