@@ -1,4 +1,4 @@
-# 🎓 Duplicate File Manager
+# 🎓 Duplicate File Manager 23TIA4
 
 Aplikasi Python untuk mendeteksi dan menghapus file duplikat dari folder asli.
 
