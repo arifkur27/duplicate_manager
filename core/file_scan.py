@@ -3,8 +3,10 @@ import csv
 import time
 from concurrent.futures import ThreadPoolExecutor
 from .file_hash import quick_hash, full_hash
+from core.utils import resource_path   # ✅ penting untuk exe
 
-LOG_PATH = "data/duplikat_log.csv"
+# ✅ path aman untuk python & exe
+LOG_PATH = resource_path("data/duplikat_log.csv")
 
 def scan_folder(folder_path, progress_callback=None, finish_callback=None):
     start_time = time.time()
@@ -35,6 +37,9 @@ def scan_folder(folder_path, progress_callback=None, finish_callback=None):
                 duplicates.append((f1, f2))
         else:
             hash_map[q_hash] = path
+
+    # ✅ buat folder data jika belum ada
+    os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
 
     # ✅ simpan log
     if duplicates:

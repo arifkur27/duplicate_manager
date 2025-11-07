@@ -1,5 +1,4 @@
 import os
-from tqdm import tqdm
 
 def delete_file(file_paths):
     """
@@ -9,7 +8,7 @@ def delete_file(file_paths):
     if isinstance(file_paths, str):
         file_paths = [file_paths]
 
-    for path in tqdm(file_paths, desc="Menghapus file", unit="file"):
+    for path in file_paths:
         try:
             abs_path = os.path.abspath(path)  # pastikan path absolut
             if os.path.exists(abs_path):

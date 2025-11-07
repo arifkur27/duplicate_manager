@@ -541,30 +541,6 @@
   ('codeop',
    'C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\codeop.py',
    'PYMODULE'),
-  ('colorama',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\colorama\\__init__.py',
-   'PYMODULE'),
-  ('colorama.ansi',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\colorama\\ansi.py',
-   'PYMODULE'),
-  ('colorama.ansitowin32',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\colorama\\ansitowin32.py',
-   'PYMODULE'),
-  ('colorama.initialise',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\colorama\\initialise.py',
-   'PYMODULE'),
-  ('colorama.win32',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\colorama\\win32.py',
-   'PYMODULE'),
-  ('colorama.winterm',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\colorama\\winterm.py',
-   'PYMODULE'),
   ('colorsys',
    'C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\colorsys.py',
    'PYMODULE'),
@@ -607,6 +583,10 @@
   ('core.file_scan',
    'C:\\Users\\hp\\Documents\\semester 5\\pemograman '
    'python\\duplicate_manager\\core\\file_scan.py',
+   'PYMODULE'),
+  ('core.utils',
+   'C:\\Users\\hp\\Documents\\semester 5\\pemograman '
+   'python\\duplicate_manager\\core\\utils.py',
    'PYMODULE'),
   ('csv',
    'C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\csv.py',
@@ -1955,46 +1935,6 @@
    'PYMODULE'),
   ('tomllib._types',
    'C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tomllib\\_types.py',
-   'PYMODULE'),
-  ('tqdm',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\__init__.py',
-   'PYMODULE'),
-  ('tqdm._dist_ver',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\_dist_ver.py',
-   'PYMODULE'),
-  ('tqdm._monitor',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\_monitor.py',
-   'PYMODULE'),
-  ('tqdm._tqdm_pandas',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\_tqdm_pandas.py',
-   'PYMODULE'),
-  ('tqdm.cli',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\cli.py',
-   'PYMODULE'),
-  ('tqdm.gui',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\gui.py',
-   'PYMODULE'),
-  ('tqdm.notebook',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\notebook.py',
-   'PYMODULE'),
-  ('tqdm.std',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\std.py',
-   'PYMODULE'),
-  ('tqdm.utils',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\utils.py',
-   'PYMODULE'),
-  ('tqdm.version',
-   'c:\\Users\\hp\\Documents\\semester 5\\pemograman '
-   'python\\duplicate_manager\\.venv\\Lib\\site-packages\\tqdm\\version.py',
    'PYMODULE'),
   ('tracemalloc',
    'C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tracemalloc.py',
