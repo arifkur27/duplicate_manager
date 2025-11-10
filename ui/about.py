@@ -2,12 +2,10 @@ import customtkinter as ctk
 
 class AboutFrame(ctk.CTkFrame):
     def __init__(self, parent):
-        super().__init__(parent)
         
         # Warna utama (tema)
         self.primary_color = "#5A5BF3"
         self.accent_color = "#6C63FF"
-        self.text_main = "#1B1B2F"
         self.text_secondary = "#444"
         self.bg_light = "#F8F9FA"
         self.bg_dark = "#1E1E2E"
@@ -18,7 +16,8 @@ class AboutFrame(ctk.CTkFrame):
         bg_color = self.bg_dark if current_theme == "Dark" else self.bg_light
         subtext_color = "#DDE1E7" if current_theme == "Dark" else self.text_secondary
 
-        super().__init__(parent, fg_color=bg_color)
+        # Inisialisasi Frame (Penting: Panggil super().__init__ hanya sekali)
+        super().__init__(parent, fg_color=bg_color) 
 
         # Judul utama
         ctk.CTkLabel(
@@ -67,7 +66,7 @@ class AboutFrame(ctk.CTkFrame):
         )
         self.btn_team.grid(row=0, column=2, padx=10)
 
-        # ✅ Frame utama konten (scrollable FIX)
+        # Frame utama konten (scrollable FIX)
         self.content_frame = ctk.CTkScrollableFrame(
             self,
             corner_radius=15,
@@ -76,7 +75,7 @@ class AboutFrame(ctk.CTkFrame):
         self.content_frame.pack(padx=30, pady=(10, 25), fill="both", expand=True)
 
         # Default tampilan
-        self.show_info()
+        self.show_info() 
 
         # Footer
         ctk.CTkLabel(
@@ -95,6 +94,10 @@ class AboutFrame(ctk.CTkFrame):
 
     def show_info(self):
         self.clear_content()
+        
+        current_theme = ctk.get_appearance_mode()
+        text_color_adapt = "#E0E0E0" if current_theme == "Dark" else "#1B1B2F"
+
         ctk.CTkLabel(
             self.content_frame,
             text="Informasi Aplikasi",
@@ -105,11 +108,11 @@ class AboutFrame(ctk.CTkFrame):
         ctk.CTkLabel(
             self.content_frame,
             text=("Duplicate File Manager adalah aplikasi berbasis GUI yang membantu Anda "
-                  "mendeteksi file duplikat di komputer dengan cepat dan efisien. "
-                  "Aplikasi ini dirancang dengan antarmuka modern, mudah digunakan, "
-                  "dan mendukung mode aman (*Safe Mode*) agar file tidak langsung terhapus permanen."),
+                      "mendeteksi file duplikat di komputer dengan cepat dan efisien. "
+                      "Aplikasi ini dirancang dengan antarmuka modern, mudah digunakan, "
+                      "dan mendukung mode aman (*Safe Mode*) agar file tidak langsung terhapus permanen."),
             font=("Inter", 13),
-            text_color="#E0E0E0" if ctk.get_appearance_mode() == "Dark" else "#1B1B2F",
+            text_color=text_color_adapt,
             justify="left",
             wraplength=600
         ).pack(padx=25, pady=(0, 15))
@@ -132,12 +135,16 @@ class AboutFrame(ctk.CTkFrame):
             self.content_frame,
             text=fitur_text,
             font=("Inter", 13),
-            text_color="#E0E0E0" if ctk.get_appearance_mode() == "Dark" else "#1B1B2F",
+            text_color=text_color_adapt,
             justify="left"
         ).pack(padx=25, pady=(0, 10))
 
     def show_usage(self):
         self.clear_content()
+        
+        current_theme = ctk.get_appearance_mode()
+        text_color_adapt = "#E0E0E0" if current_theme == "Dark" else "#1B1B2F"
+        
         ctk.CTkLabel(
             self.content_frame,
             text="Cara Penggunaan",
@@ -164,18 +171,19 @@ class AboutFrame(ctk.CTkFrame):
             font=("Inter", 13),
             wrap="word",
             fg_color=("#FFFFFF", "#2B2B40"),
-            text_color="#E0E0E0" if ctk.get_appearance_mode() == "Dark" else "#1B1B2F",
+            text_color=text_color_adapt,
             corner_radius=10
         )
         textbox.pack(padx=25, pady=(10, 15))
         textbox.insert("1.0", "\n" + usage_text)
         textbox.configure(state="disabled")
 
-    # ======================================================
-    # HALAMAN PEMBUAT APLIKASI
-    # ======================================================
     def show_team(self):
         self.clear_content()
+        
+        current_theme = ctk.get_appearance_mode()
+        text_color_adapt = "#E0E0E0" if current_theme == "Dark" else "#1B1B2F"
+
         ctk.CTkLabel(
             self.content_frame,
             text="Pembuat Aplikasi",
@@ -184,7 +192,7 @@ class AboutFrame(ctk.CTkFrame):
         ).pack(pady=(15, 10))
 
         team_frame = ctk.CTkFrame(self.content_frame, fg_color="transparent")
-        team_frame.pack(padx=20, pady=(5, 15))
+        team_frame.pack(padx=20, pady=(5, 15), fill="x", expand=True) 
 
         anggota = [
             ("Arif Kurniawan", "230103126"),
@@ -194,19 +202,25 @@ class AboutFrame(ctk.CTkFrame):
             ("Muhammad Fadlan Al Farid", "230103199"),
         ]
 
-        # tampil 2 kolom (kotak)
+        # Konfigurasi kolom agar simetris
+        team_frame.grid_columnconfigure(0, weight=1)
+        team_frame.grid_columnconfigure(1, weight=1)
+
         for i, (nama, nim) in enumerate(anggota):
             row = i // 2
             col = i % 2
-
+            
+            CARD_HEIGHT = 80 
+            
             card = ctk.CTkFrame(
                 team_frame,
                 corner_radius=12,
                 fg_color=("#FFFFFF", "#2F2F44"),
                 border_color=self.accent_color,
-                border_width=1
+                border_width=1,
+                height=CARD_HEIGHT
             )
-            card.grid(row=row, column=col, padx=19, pady=10, sticky="nsew")
+            card.grid(row=row, column=col, padx=10, pady=10, sticky="nsew") 
 
             ctk.CTkLabel(
                 card,
@@ -219,7 +233,7 @@ class AboutFrame(ctk.CTkFrame):
                 card,
                 text=f"NIM: {nim}",
                 font=("Inter", 13),
-                text_color="#E0E0E0" if ctk.get_appearance_mode() == "Dark" else "#1B1B2F"
+                text_color=text_color_adapt
             ).pack(pady=(0, 10))
 
         ctk.CTkLabel(
