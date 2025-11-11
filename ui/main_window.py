@@ -1,5 +1,6 @@
 import customtkinter as ctk
 from tkinter import messagebox, filedialog
+import os, sys  # tambahan untuk deteksi path ikon
 # Asumsi file-file inti ini ada
 from core.file_scan import scan_folder
 from core.file_delete import delete_file
@@ -17,6 +18,28 @@ class DuplicateManagerApp(ctk.CTk):
 
         self.title("Duplicate File Manager")
         self.geometry("1000x600")
+
+        # ====================================================
+        # Tambahan: Atur ikon aplikasi
+        # ====================================================
+        try:
+            if hasattr(sys, "_MEIPASS"):
+                # Jika dijalankan dari file .exe (PyInstaller)
+                icon_path = os.path.join(sys._MEIPASS, "5362459.ico")
+            else:
+                # Jika dijalankan langsung dari folder proyek
+                icon_path = os.path.join(
+                    os.path.dirname(os.path.abspath(__file__)),
+                    "..", "5362459.ico"
+                )
+                icon_path = os.path.normpath(icon_path)
+
+            if os.path.exists(icon_path):
+                self.iconbitmap(icon_path)
+            else:
+                print(f"[PERINGATAN] File ikon tidak ditemukan: {icon_path}")
+        except Exception as e:
+            print(f"[ERROR ICON] Tidak dapat memuat ikon: {e}")
 
         # Tema default (Light/Dark)
         self.current_theme = ctk.get_appearance_mode()

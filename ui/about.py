@@ -2,8 +2,7 @@ import customtkinter as ctk
 
 class AboutFrame(ctk.CTkFrame):
     def __init__(self, parent):
-        
-        # Warna utama (tema)
+        # Warna tema
         self.primary_color = "#5A5BF3"
         self.accent_color = "#6C63FF"
         self.text_secondary = "#444"
@@ -11,13 +10,13 @@ class AboutFrame(ctk.CTkFrame):
         self.bg_dark = "#1E1E2E"
         self.divider_color = "#DADCE0"
 
-        # Tema adaptif
+        # Deteksi tema saat ini
         current_theme = ctk.get_appearance_mode()
         bg_color = self.bg_dark if current_theme == "Dark" else self.bg_light
         subtext_color = "#DDE1E7" if current_theme == "Dark" else self.text_secondary
 
-        # Inisialisasi Frame (Penting: Panggil super().__init__ hanya sekali)
-        super().__init__(parent, fg_color=bg_color) 
+        # Inisialisasi Frame
+        super().__init__(parent, fg_color=bg_color)
 
         # Judul utama
         ctk.CTkLabel(
@@ -30,9 +29,11 @@ class AboutFrame(ctk.CTkFrame):
         # Subjudul
         ctk.CTkLabel(
             self,
-            text="Aplikasi untuk mendeteksi dan menghapus file duplikat secara cepat dan aman.",
+            text="Aplikasi untuk mendeteksi dan menghapus file duplikat dengan cepat, aman, dan efisien.",
             font=("Poppins", 14),
-            text_color=subtext_color
+            text_color=subtext_color,
+            wraplength=700,
+            justify="center"
         ).pack(pady=(0, 20))
 
         # Garis pemisah
@@ -66,7 +67,7 @@ class AboutFrame(ctk.CTkFrame):
         )
         self.btn_team.grid(row=0, column=2, padx=10)
 
-        # Frame utama konten (scrollable FIX)
+        # Frame konten scrollable
         self.content_frame = ctk.CTkScrollableFrame(
             self,
             corner_radius=15,
@@ -74,13 +75,13 @@ class AboutFrame(ctk.CTkFrame):
         )
         self.content_frame.pack(padx=30, pady=(10, 25), fill="both", expand=True)
 
-        # Default tampilan
-        self.show_info() 
+        # Tampilan default
+        self.show_info()
 
         # Footer
         ctk.CTkLabel(
             self,
-            text="Versi 1.0.0 — Dibuat oleh Kelompok 5",
+            text="Versi 1.0.0 — Dibuat oleh Kelompok 5 23TIA4",
             font=("Poppins", 12, "italic"),
             text_color=subtext_color
         ).pack(pady=(0, 10))
@@ -94,7 +95,7 @@ class AboutFrame(ctk.CTkFrame):
 
     def show_info(self):
         self.clear_content()
-        
+
         current_theme = ctk.get_appearance_mode()
         text_color_adapt = "#E0E0E0" if current_theme == "Dark" else "#1B1B2F"
 
@@ -105,46 +106,34 @@ class AboutFrame(ctk.CTkFrame):
             text_color=self.primary_color
         ).pack(pady=(15, 10))
 
-        ctk.CTkLabel(
-            self.content_frame,
-            text=("Duplicate File Manager adalah aplikasi berbasis GUI yang membantu Anda "
-                      "mendeteksi file duplikat di komputer dengan cepat dan efisien. "
-                      "Aplikasi ini dirancang dengan antarmuka modern, mudah digunakan, "
-                      "dan mendukung mode aman (*Safe Mode*) agar file tidak langsung terhapus permanen."),
-            font=("Inter", 13),
-            text_color=text_color_adapt,
-            justify="left",
-            wraplength=600
-        ).pack(padx=25, pady=(0, 15))
-
-        fitur_text = (
-            "• Pencarian file duplikat berdasarkan nama, ukuran, atau hash.\n"
-            "• Filter berdasarkan jenis file (gambar, musik, dokumen, dll).\n"
-            "• Mode aman (*Safe Mode*) untuk menghindari penghapusan permanen.\n"
-            "• Antarmuka ringan, cepat, dan ramah pengguna."
+        info_text = (
+            "Duplicate File Manager adalah aplikasi berbasis GUI yang membantu pengguna "
+            "mendeteksi file duplikat pada komputer dengan cepat dan akurat. "
+            "Aplikasi ini dirancang dengan antarmuka modern, ringan, dan mudah digunakan.\n\n"
+            "Selain memudahkan dalam pengelolaan file, aplikasi ini juga mendukung efisiensi penyimpanan "
+            "dan membantu pengguna menjaga kerapian data di perangkat mereka. "
+            "Duplicate File Manager cocok digunakan oleh pelajar, mahasiswa, dan pekerja profesional "
+            "yang sering mengelola banyak file sekaligus.\n\n"
+            "Aplikasi ini dikembangkan oleh tim mahasiswa kelas 23TIA4 Universitas Duta Bangsa Surakarta, "
+            "Program Studi Teknik Informatika, yang berkomitmen untuk menghadirkan solusi praktis dan inovatif "
+            "dalam bidang manajemen data."
         )
 
         ctk.CTkLabel(
             self.content_frame,
-            text="Fitur Utama:",
-            font=("Poppins", 14, "bold"),
-            text_color=self.primary_color
-        ).pack(pady=(10, 5))
-
-        ctk.CTkLabel(
-            self.content_frame,
-            text=fitur_text,
+            text=info_text,
             font=("Inter", 13),
             text_color=text_color_adapt,
-            justify="left"
-        ).pack(padx=25, pady=(0, 10))
+            justify="left",
+            wraplength=680
+        ).pack(padx=25, pady=(0, 15))
 
     def show_usage(self):
         self.clear_content()
-        
+
         current_theme = ctk.get_appearance_mode()
         text_color_adapt = "#E0E0E0" if current_theme == "Dark" else "#1B1B2F"
-        
+
         ctk.CTkLabel(
             self.content_frame,
             text="Cara Penggunaan",
@@ -154,20 +143,22 @@ class AboutFrame(ctk.CTkFrame):
 
         usage_text = (
             "1. Pilih folder yang ingin dipindai dari komputer Anda.\n"
-            "2. Klik tombol **Cari Duplikat** untuk memulai proses pencarian.\n"
-            "3. Setelah hasil muncul, centang file yang ingin dihapus.\n"
-            "4. Tekan **Hapus File Terpilih** untuk membersihkan penyimpanan.\n"
-            "5. Gunakan **Filter File** untuk menampilkan jenis file tertentu sesuai kebutuhan.\n\n"
-            "💡 Tips tambahan:\n"
-            "- Aktifkan *Safe Mode* agar file dipindahkan ke folder aman sebelum dihapus permanen.\n"
-            "- Anda dapat meninjau ulang file di tab *Preview* sebelum dihapus.\n"
-            "- Pastikan memiliki ruang kosong yang cukup saat melakukan pemindaian folder besar."
+            "2. Klik tombol 'Cari Duplikat' untuk memulai proses pemindaian.\n"
+            "3. Tunggu beberapa saat hingga proses selesai dan hasil ditampilkan.\n"
+            "4. Pilih file yang ingin dihapus dari daftar hasil pencarian.\n"
+            "5. Tekan tombol 'Hapus File Terpilih' untuk menghapus file duplikat dengan aman.\n\n"
+            "💡 Tips Tambahan:\n"
+            "- Gunakan fitur filter untuk menampilkan file berdasarkan jenis tertentu (gambar, dokumen, video, dsb).\n"
+            "- Anda dapat meninjau ulang file di tab 'Preview' sebelum dihapus.\n"
+            "- Pastikan tidak menghapus file penting yang digunakan oleh sistem atau aplikasi lain.\n\n"
+            "Duplicate File Manager dibuat untuk memberikan pengalaman pengguna yang aman, cepat, dan efisien "
+            "dalam menjaga kebersihan data digital Anda."
         )
 
         textbox = ctk.CTkTextbox(
             self.content_frame,
             width=600,
-            height=200,
+            height=270,
             font=("Inter", 13),
             wrap="word",
             fg_color=("#FFFFFF", "#2B2B40"),
@@ -180,10 +171,12 @@ class AboutFrame(ctk.CTkFrame):
 
     def show_team(self):
         self.clear_content()
-        
+
         current_theme = ctk.get_appearance_mode()
         text_color_adapt = "#E0E0E0" if current_theme == "Dark" else "#1B1B2F"
+        card_bg = "#2F2F44" if current_theme == "Dark" else "#FFFFFF"
 
+        # Judul bagian
         ctk.CTkLabel(
             self.content_frame,
             text="Pembuat Aplikasi",
@@ -191,8 +184,19 @@ class AboutFrame(ctk.CTkFrame):
             text_color=self.primary_color
         ).pack(pady=(15, 10))
 
+        # Subjudul deskriptif
+        ctk.CTkLabel(
+            self.content_frame,
+            text="Tim pengembang dari kelas 23TIA4 Universitas Duta Bangsa Surakarta yang berkontribusi dalam pembuatan aplikasi ini.",
+            font=("Inter", 13),
+            text_color=text_color_adapt,
+            wraplength=650,
+            justify="center"
+        ).pack(padx=25, pady=(0, 15))
+
+        # Frame utama untuk kartu anggota
         team_frame = ctk.CTkFrame(self.content_frame, fg_color="transparent")
-        team_frame.pack(padx=20, pady=(5, 15), fill="x", expand=True) 
+        team_frame.pack(padx=30, pady=(5, 15), fill="x", expand=True)
 
         anggota = [
             ("Arif Kurniawan", "230103126"),
@@ -202,32 +206,28 @@ class AboutFrame(ctk.CTkFrame):
             ("Muhammad Fadlan Al Farid", "230103199"),
         ]
 
-        # Konfigurasi kolom agar simetris
-        team_frame.grid_columnconfigure(0, weight=1)
-        team_frame.grid_columnconfigure(1, weight=1)
+        team_frame.grid_columnconfigure((0, 1), weight=1)
 
         for i, (nama, nim) in enumerate(anggota):
             row = i // 2
             col = i % 2
-            
-            CARD_HEIGHT = 80 
-            
+
             card = ctk.CTkFrame(
                 team_frame,
                 corner_radius=12,
-                fg_color=("#FFFFFF", "#2F2F44"),
+                fg_color=card_bg,
                 border_color=self.accent_color,
-                border_width=1,
-                height=CARD_HEIGHT
+                border_width=1.3,
+                height=90
             )
-            card.grid(row=row, column=col, padx=10, pady=10, sticky="nsew") 
+            card.grid(row=row, column=col, padx=15, pady=10, sticky="nsew")
 
             ctk.CTkLabel(
                 card,
                 text=nama,
                 font=("Poppins", 14, "bold"),
                 text_color=self.primary_color
-            ).pack(pady=(10, 2))
+            ).pack(pady=(15, 3))
 
             ctk.CTkLabel(
                 card,
@@ -241,4 +241,4 @@ class AboutFrame(ctk.CTkFrame):
             text="Universitas Duta Bangsa Surakarta — 2025",
             font=("Poppins", 12, "italic"),
             text_color=self.accent_color
-        ).pack(pady=(10, 10))
+        ).pack(pady=(15, 10))
