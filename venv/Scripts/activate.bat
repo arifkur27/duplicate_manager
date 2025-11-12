@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=D:\UDB\tugas smt 5\pem.python\UAS_python\duplicate_manager\venv"
+set "VIRTUAL_ENV=C:\Users\LENOVO\Documents\dista\uaspy\duplicate_manager\venv"
 
 if not defined PROMPT set PROMPT=$P$G
 

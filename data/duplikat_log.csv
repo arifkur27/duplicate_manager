@@ -1,7 +1,179 @@
 File 1,File 2
-C:/Users/hp/Downloads/New folder\2 - Copy (10) - Copy - Copy - Copy.jpg,C:/Users/hp/Downloads/New folder\2 - Copy (10) - Copy - Copy.jpg
-C:/Users/hp/Downloads/New folder\2 - Copy (10) - Copy - Copy - Copy.jpg,C:/Users/hp/Downloads/New folder\2 - Copy (11) - Copy - Copy - Copy.jpg
-C:/Users/hp/Downloads/New folder\2 - Copy (10) - Copy - Copy - Copy.jpg,C:/Users/hp/Downloads/New folder\2 - Copy (12) - Copy - Copy - Copy.jpg
-C:/Users/hp/Downloads/New folder\2 - Copy (10) - Copy - Copy - Copy.jpg,C:/Users/hp/Downloads/New folder\2 - Copy (13) - Copy - Copy - Copy.jpg
-C:/Users/hp/Downloads/New folder\2 - Copy (10) - Copy - Copy - Copy.jpg,C:/Users/hp/Downloads/New folder\2 - Copy (14) - Copy - Copy - Copy.jpg
-C:/Users/hp/Downloads/New folder\ARIFKURNIAWAN_23TIA4_TUGAS2_230103126_DASAR_ALGORITMA_DAN_PEMOGRAMAN.pdf,C:/Users/hp/Downloads/New folder\New folder\1.pdf
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\config,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\config
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\description,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\description
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\HEAD,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\HEAD
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\applypatch-msg.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\applypatch-msg.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\commit-msg.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\commit-msg.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\fsmonitor-watchman.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\fsmonitor-watchman.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\post-update.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\post-update.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\pre-applypatch.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\pre-applypatch.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\pre-commit.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\pre-commit.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\pre-merge-commit.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\pre-merge-commit.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\pre-push.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\pre-push.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\pre-rebase.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\pre-rebase.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\pre-receive.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\pre-receive.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\prepare-commit-msg.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\prepare-commit-msg.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\push-to-checkout.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\push-to-checkout.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\sendemail-validate.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\sendemail-validate.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\hooks\update.sample,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\hooks\update.sample
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\info\exclude,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\info\exclude
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\logs\HEAD,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\logs\refs\heads\main
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\logs\HEAD,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\logs\refs\remotes\origin\HEAD
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\.git\refs\remotes\origin\HEAD,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\.git\refs\remotes\origin\HEAD
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\core\file_hash.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\core\file_hash.py
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\core\__pycache__\__init__.cpython-313.pyc,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\core\__pycache__\__init__.cpython-313.pyc
+C:/Users/LENOVO/Documents/dista\github\duplicate_manager\ui\filter_logic.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\ui\filter_logic.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\customtkinter-5.2.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\customtkinter-5.2.0.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\darkdetect-0.8.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\docx\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\docx\dml\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\docx\enum\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\docx\opc\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\docx\opc\parts\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\docx\oxml\text\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\docx\parts\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\docx\text\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\et_xmlfile-2.0.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml\etree.h,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml\lxml.etree.h
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml\includes\__init__.pxd
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml\includes\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml\includes\extlibs\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml\includes\libexslt\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml\includes\libxml\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml\includes\libxslt\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml-6.0.2.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl\pivot\__init__.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl\reader\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl\pivot\__init__.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl\worksheet\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl\pivot\__init__.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl\writer\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl-3.1.5.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\et_xmlfile-2.0.0.dist-info\LICENCE.rst,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl-3.1.5.dist-info\LICENCE.rst
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\openpyxl-3.1.5.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\PIL\_imagingcms.pyi,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\PIL\_imagingft.pyi
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pillow-10.2.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pillow-10.2.0.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_internal\operations\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_internal\operations\build\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_internal\resolution\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_internal\resolution\legacy\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_internal\resolution\resolvelib\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_internal\utils\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\cachecontrol\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\certifi\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\distro\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\idna\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\packaging\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\platformdirs\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\resolvelib\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\resolvelib\compat\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\rich\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\truststore\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\urllib3\contrib\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\urllib3\contrib\_securetransport\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\urllib3\packages\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip-24.3.1.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip-24.3.1.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip-24.3.1.dist-info\top_level.txt
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pkg_resources\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pkg_resources\tests\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pkg_resources\tests\data\my-test-package-source\setup.cfg
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pkg_resources\tests\data\my-test-package_unpacked-egg\my_test_package-1.0-py3.7.egg\EGG-INFO\dependency_links.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pkg_resources\tests\data\my-test-package_unpacked-egg\my_test_package-1.0-py3.7.egg\EGG-INFO\top_level.txt
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pkg_resources\tests\data\my-test-package_unpacked-egg\my_test_package-1.0-py3.7.egg\EGG-INFO\dependency_links.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pkg_resources\tests\data\my-test-package_unpacked-egg\my_test_package-1.0-py3.7.egg\EGG-INFO\zip-safe
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pymupdf-1.26.6.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pymupdf-1.26.6.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\python_docx-1.2.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\python_docx-1.2.0.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\cli-32.exe,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\cli.exe
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\gui-32.exe,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\gui.exe
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\compat\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\tests\compat\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\tests\config\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\tests\integration\__init__.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_distutils\tests\test_versionpredicate.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_distutils\tests\compat\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\autocommand-2.2.2.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\darkdetect-0.8.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\autocommand-2.2.2.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports\tarfile\compat\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\importlib_metadata\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\importlib_metadata\compat\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\importlib_metadata-8.0.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\importlib_metadata-8.0.0.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\inflect\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\inflect\compat\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\inflect-7.3.1.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\inflect-7.3.1.dist-info\LICENSE
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco\collections\py.typed
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco\functools\py.typed
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.collections-5.1.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.collections-5.1.0.dist-info\LICENSE
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.collections-5.1.0.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.context-5.3.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.context-5.3.0.dist-info\LICENSE
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.collections-5.1.0.dist-info\top_level.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.context-5.3.0.dist-info\top_level.txt
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.context-5.3.0.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.functools-4.0.1.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.functools-4.0.1.dist-info\LICENSE
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.collections-5.1.0.dist-info\top_level.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.functools-4.0.1.dist-info\top_level.txt
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.functools-4.0.1.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.text-3.12.1.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.text-3.12.1.dist-info\LICENSE
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.text-3.12.1.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.collections-5.1.0.dist-info\top_level.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.text-3.12.1.dist-info\top_level.txt
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\jaraco.text-3.12.1.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\more_itertools\py.typed
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\more_itertools-10.3.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\more_itertools-10.3.0.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging\py.typed
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\packaging\requirements.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging\requirements.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\packaging\_musllinux.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging\_musllinux.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\packaging\_parser.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging\_parser.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\packaging\_structures.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging\_structures.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\packaging\_tokenizer.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging\_tokenizer.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging-24.2.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\platformdirs\android.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs\android.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\platformdirs\api.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs\api.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\platformdirs\macos.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs\macos.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs\py.typed
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\platformdirs\unix.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs\unix.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\platformdirs\version.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs\version.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\platformdirs\windows.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs\windows.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs-4.2.2.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\platformdirs-4.2.2.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\tomli\py.typed,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\tomli\py.typed
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\tomli\_parser.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\tomli\_parser.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\tomli\_re.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\tomli\_re.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\tomli\_types.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\tomli\_types.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\tomli\__init__.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\tomli\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\tomli-2.0.1.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\tomli-2.0.1.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\typeguard\py.typed
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\typeguard-4.3.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\typeguard-4.3.0.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\typing_extensions-4.12.2.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\wheel\vendored\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging-24.2.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\wheel\vendored\packaging\LICENSE
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging-24.2.dist-info\LICENSE.BSD,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\wheel\vendored\packaging\LICENSE.BSD
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\pip\_vendor\packaging\_structures.py,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\wheel\vendored\packaging\_structures.py
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\wheel\vendored\packaging\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\wheel-0.45.1.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\wheel-0.45.1.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\packaging-24.2.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\wheel-0.45.1.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\zipp\compat\__init__.py
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\zipp-3.19.2.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\zipp-3.19.2.dist-info\LICENSE
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\zipp-3.19.2.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\zipp-3.19.2.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools-80.9.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools-80.9.0.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\python_docx-1.2.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools-80.9.0.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools-80.9.0.dist-info\licenses\LICENSE
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\tqdm-4.66.4.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\bsdt individ.txt,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\tqdm-4.66.4.dist-info\REQUESTED
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\backports.tarfile-1.2.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\tqdm-4.66.4.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\colorama-0.4.6.dist-info\INSTALLER,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\typing_extensions-4.15.0.dist-info\INSTALLER
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\setuptools\_vendor\typing_extensions-4.12.2.dist-info\LICENSE,C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\typing_extensions-4.15.0.dist-info\licenses\LICENSE
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\lxml-6.0.2.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\utspy\UTS\.venv\Lib\site-packages\charset_normalizer-3.4.4.dist-info\WHEEL
+C:/Users/LENOVO/Documents/dista\uaspy\duplicate_manager\venv\Lib\site-packages\typing_extensions-4.15.0.dist-info\WHEEL,C:/Users/LENOVO/Documents/dista\utspy\UTS\.venv\Lib\site-packages\idna-3.11.dist-info\WHEEL
